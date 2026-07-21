@@ -39,25 +39,30 @@ window.onload = function () {
 DASHBOARD
 ==============================*/
 
-function loadDashboard() {
+async function loadDashboard() {
 
-    google.script.run
-        .withSuccessHandler(function (data) {
+    try {
 
-            document.getElementById("jumlahKomoditi").innerHTML =
-                data.jumlah;
+        const response = await fetch(API + "?action=getDashboard");
+        const data = await response.json();
 
-            document.getElementById("hargaTertinggi").innerHTML =
-    (data.naik || 0) + " Komoditas";
+        document.getElementById("jumlahKomoditi").innerHTML =
+            data.jumlah;
 
-             document.getElementById("hargaTerendah").innerHTML =
-    (data.turun || 0) + " Komoditas";
+        document.getElementById("hargaTertinggi").innerHTML =
+            (data.naik || 0) + " Komoditas";
 
-            document.getElementById("updateTerakhir").innerHTML =
-                data.update;
+        document.getElementById("hargaTerendah").innerHTML =
+            (data.turun || 0) + " Komoditas";
 
-        })
-        .getDashboard();
+        document.getElementById("updateTerakhir").innerHTML =
+            data.update;
+
+    } catch (err) {
+
+        console.error("Load Dashboard gagal:", err);
+
+    }
 
 }
 
