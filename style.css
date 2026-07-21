@@ -7454,6 +7454,21 @@ JUDUL
     height:65px !important;
 }
 
+/* Logo BAPANAS lebih kecil */
+.logo-kanan{
+    width:55px !important;
+    height:55px !important;
+}
+
+@media (max-width:768px){
+
+    .logo-kanan{
+        width:55px !important;
+        height:55px !important;
+    }
+
+}
+
 /*==================================================
 BADGE TANGGAL
 ==================================================*/
