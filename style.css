@@ -7678,3 +7678,17 @@ PETA KABUPATEN KUPANG
     text-align:center;
 
 }
+
+/* =========================
+   Ukuran Logo Header
+========================= */
+
+.logo-kiri{
+    width:68px !important;
+    height:68px !important;
+}
+
+.logo-kanan{
+    width:55px !important;
+    height:55px !important;
+}
