@@ -61,18 +61,24 @@ async function loadDashboard() {
 LOAD DATA
 ==============================*/
 
-function loadData(){
+async function loadData() {
 
-    google.script.run
-    .withSuccessHandler(function(hasil){
+    try {
+
+        const response = await fetch(API + "?action=getHarga");
+        const hasil = await response.json();
 
         dataHarga = hasil;
         dataTampil = hasil;
+
         tampilkanTabel(dataTampil);
         buatGrafik(dataTampil);
 
-    })
-    .getHarga();
+    } catch (err) {
+
+        console.error("Load Data gagal:", err);
+
+    }
 
 }
 
@@ -180,27 +186,31 @@ LOAD KOMODITI
 
 function loadKomoditi() {
 
-    google.script.run
-        .withSuccessHandler(function (list) {
+    async function loadKomoditi() {
 
-            let html =
+    try {
 
-                '<option value="">Semua Komoditas</option>';
+        const response = await fetch(API + "?action=getKomoditi");
+        const list = await response.json();
 
-            list.forEach(function (k) {
+        let html = '<option value="">Semua Komoditas</option>';
 
-                html +=
+        list.forEach(function(k) {
 
-                    `<option value="${k}">${k}</option>`;
+            html += `<option value="${k}">${k}</option>`;
 
-            });
+        });
 
-            document.getElementById("filterKomoditi").innerHTML = html;
+        document.getElementById("filterKomoditi").innerHTML = html;
 
-        })
-        .getKomoditi();
+    } catch (err) {
+
+        console.error("Load Komoditi gagal:", err);
+
+    }
 
 }
+    
 /*==================================================
 GRAFIK CHART.JS
 ==================================================*/
