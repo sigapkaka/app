@@ -7692,3 +7692,83 @@ PETA KABUPATEN KUPANG
     width:55px !important;
     height:55px !important;
 }
+
+/* HEADER BARU */
+
+.header-flex{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:15px;
+
+    width:100%;
+
+}
+
+.header-logo{
+
+    flex:0 0 70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.header-center{
+
+    flex:1;
+
+    text-align:center;
+
+}
+
+.logo-kiri{
+
+    width:70px;
+    height:auto;
+
+}
+
+.logo-kanan{
+
+    width:55px;
+    height:auto;
+
+}
+
+@media(max-width:768px){
+
+.header-flex{
+
+    gap:8px;
+
+}
+
+.header-logo{
+
+    flex:0 0 60px;
+
+}
+
+.logo-kiri{
+
+    width:58px;
+
+}
+
+.logo-kanan{
+
+    width:48px;
+
+}
+
+.header-center h1{
+
+    font-size:34px;
+
+}
+
+}
