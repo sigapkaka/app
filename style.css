@@ -7314,17 +7314,19 @@ JUDUL
     height:65px !important;
 }
 
-/* Logo BAPANAS lebih kecil */
+/* Logo BAPANAS */
 .logo-kanan{
-    width:55px !important;
-    height:55px !important;
+    width:auto !important;
+    height:65px !important;
+    object-fit:contain;
 }
 
 @media (max-width:768px){
 
     .logo-kanan{
-        width:55px !important;
-        height:55px !important;
+        width:auto !important;
+        height:50px !important;
+        object-fit:contain;
     }
 
 }
