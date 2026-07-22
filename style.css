@@ -5127,7 +5127,7 @@ HEADER VERIFIKATOR - HP
        MOTTO
     ========================================== */
 
-    .header .sigap-motto{
+  .sigap-motto{
 
         width:100% !important;
 
@@ -5428,7 +5428,7 @@ HEADER VERIFIKATOR - HP
        MOTTO
     ================================================= */
 
-    .header .sigap-motto{
+    .sigap-motto{
 
         position:relative !important;
 
@@ -5454,7 +5454,7 @@ HEADER VERIFIKATOR - HP
 
     /* GARIS MOTTO HILANG KHUSUS HP */
 
-    .header .motto-line{
+    .motto-line{
 
         display:none !important;
 
@@ -5462,7 +5462,7 @@ HEADER VERIFIKATOR - HP
 
     /* TEKS MOTTO */
 
-    .header .motto-text{
+  .motto-text{
 
         display:block !important;
 
@@ -5827,7 +5827,7 @@ HEADER VERIFIKATOR - HP
 
 @media screen and (max-width:576px){
 
-    .header .sigap-motto-full{
+    .sigap-motto-full{
 
         width:100% !important;
 
@@ -5851,13 +5851,13 @@ HEADER VERIFIKATOR - HP
 
     }
 
-    .header .sigap-motto-full .motto-line{
+   .sigap-motto-full .motto-line{
 
         display:none !important;
 
     }
 
-    .header .sigap-motto-full .motto-text{
+    .sigap-motto-full .motto-text{
 
         display:block !important;
 
