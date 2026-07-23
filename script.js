@@ -7,7 +7,7 @@ Versi 1.0 (Y.T.W)
 let dataHarga = [];
 let chart = null;
 
-const API = "https://script.google.com/macros/s/AKfycby4Nj4f_VqvNUXb64WcOfIoowbzS_mEXdo6jJqaZLcFjzw4erkFkGmrAFMrgGxn9diy/exec";
+const API = "https://script.google.com/macros/s/AKfycbyUMtuJ-LTvWzlZDuFNWo_jNn-FUtMeklLSQ6hCA4JPVxUQ-TF6XwDcyD7G8XbjvCQd/exec";
 
 /*==============================
 LOAD APLIKASI
