@@ -6469,9 +6469,10 @@ JUDUL
     margin:0 auto 8px;
 }
 
-.header-flex .logo-kanan{
+.logo-kanan{
     width:175px !important;
     height:auto !important;
+    border:3px solid red;
 }
 
 .logo-title h1{
