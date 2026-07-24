@@ -6440,42 +6440,45 @@ JUDUL
 ========================================== */
 
 .header-flex .logo-kiri{
-    width:135px !important;
+    width:140px !important;
     height:auto !important;
+    object-fit:contain;
 }
 
 .header-flex .logo-app{
-    width:100px !important;
+    width:120px !important;
     height:auto !important;
+    object-fit:contain;
 }
 
 .header-flex .logo-kanan{
-    width:155px !important;
+    width:140px !important;
     height:auto !important;
-    max-width:none !important;
+    object-fit:contain;
+}
+
+.header-flex img{
+    transition:transform .3s ease;
 }
 
 .header-flex .logo-kiri:hover,
 .header-flex .logo-app:hover,
 .header-flex .logo-kanan:hover{
-    transform:scale(1.06);
+    transform:scale(1.05);
 }
 
 @media (max-width:768px){
 
     .header-flex .logo-kiri{
-        width:90px !important;
-        height:auto !important;
+        width:85px !important;
     }
 
     .header-flex .logo-app{
-        width:70px !important;
-        height:auto !important;
+        width:80px !important;
     }
 
     .header-flex .logo-kanan{
-        width:90px !important;
-        height:auto !important;
+        width:85px !important;
     }
 
 }
