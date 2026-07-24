@@ -6509,9 +6509,14 @@ JUDUL
     gap:12px;
 }
 
-.header-flex .logo-kiri,
-.header-flex .logo-kanan{
+.header-flex .logo-kiri{
     width:105px !important;
+    height:auto !important;
+}
+
+.header-flex .logo-kanan{
+    width:170px !important;
+    height:auto !important;
 }
 
 .header-flex .logo-app{
