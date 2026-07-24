@@ -6442,9 +6442,14 @@ JUDUL
 
 .header-flex{
     display:grid;
-    grid-template-columns:170px 1fr 220px;
+    grid-template-columns:170px 1fr 250px;
     align-items:center;
     gap:20px;
+}
+
+.header-flex .logo-kanan{
+    width:240px !important;
+    height:auto !important;
 }
 
 .header-logo{
@@ -6467,11 +6472,6 @@ JUDUL
     height:auto !important;
     display:block;
     margin:0 auto 8px;
-}
-
-.header-flex .logo-kanan{
-    width:210px !important;
-    height:auto !important;
 }
 
 .logo-title h1{
