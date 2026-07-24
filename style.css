@@ -6442,7 +6442,7 @@ JUDUL
 
 .header-flex{
     display:grid;
-    grid-template-columns:170px 1fr 250px;
+    grid-template-columns:140px 1fr 250px;
     align-items:center;
     gap:20px;
 }
@@ -6463,7 +6463,7 @@ JUDUL
 }
 
 .header-flex .logo-kiri{
-    width:150px !important;
+    width:120px !important;
     height:auto !important;
 }
 
