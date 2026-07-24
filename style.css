@@ -6435,53 +6435,107 @@ JUDUL
 
 }
 
-/* ==========================================
-   UKURAN LOGO HEADER
-========================================== */
+/* ==================================================
+   HEADER SIGAP KAKA (GitHub Pages)
+   Ganti blok header lama dengan blok ini
+================================================== */
+
+.header-flex{
+    display:grid;
+    grid-template-columns:170px 1fr 170px;
+    align-items:center;
+    gap:20px;
+}
+
+.header-logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.header-center{
+    text-align:center;
+}
 
 .header-flex .logo-kiri{
-    width:140px !important;
+    width:150px !important;
     height:auto !important;
-    object-fit:contain;
 }
 
 .header-flex .logo-app{
-    width:120px !important;
+    width:130px !important;
     height:auto !important;
-    object-fit:contain;
+    display:block;
+    margin:0 auto 8px;
 }
 
 .header-flex .logo-kanan{
-    width:140px !important;
+    width:150px !important;
     height:auto !important;
-    object-fit:contain;
 }
 
-.header-flex img{
-    transition:transform .3s ease;
+.logo-title h1{
+    font-size:60px;
+    font-weight:800;
+    margin:6px 0;
 }
 
-.header-flex .logo-kiri:hover,
-.header-flex .logo-app:hover,
-.header-flex .logo-kanan:hover{
-    transform:scale(1.05);
+.logo-title p{
+    font-size:28px;
+    margin:10px 0;
 }
 
-@media (max-width:768px){
+.logo-title small{
+    display:block;
+    font-size:18px;
+    line-height:1.6;
+}
 
-    .header-flex .logo-kiri{
-        width:85px !important;
-    }
+.sigap-motto-full{
+    padding:12px 20px;
+}
 
-    .header-flex .logo-app{
-        width:80px !important;
-    }
+.sigap-motto-full .motto-text{
+    font-size:22px !important;
+    font-weight:700;
+    color:#d7a92d;
+    letter-spacing:1px;
+}
 
-    .header-flex .logo-kanan{
-        width:85px !important;
-    }
+@media(max-width:768px){
+
+.header-flex{
+    grid-template-columns:1fr;
+    gap:12px;
+}
+
+.header-flex .logo-kiri,
+.header-flex .logo-kanan{
+    width:90px !important;
+}
+
+.header-flex .logo-app{
+    width:90px !important;
+}
+
+.logo-title h1{
+    font-size:36px;
+}
+
+.logo-title p{
+    font-size:18px;
+}
+
+.logo-title small{
+    font-size:13px;
+}
+
+.sigap-motto-full .motto-text{
+    font-size:14px !important;
+}
 
 }
+
 
 /*==================================================
 BADGE TANGGAL
