@@ -6747,3 +6747,42 @@ PETA KABUPATEN KUPANG
 
 }
 
+/*==================================================
+HEADER LOGO
+==================================================*/
+
+.header-logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logo-header{
+    display:block;
+    object-fit:contain;
+}
+
+/* Logo Kabupaten */
+.logo-kiri{
+    width:85px !important;
+    height:auto !important;
+}
+
+/* Logo Bapanas */
+.logo-kanan{
+    width:130px !important;
+    height:auto !important;
+}
+
+/* HP */
+@media (max-width:768px){
+
+    .logo-kiri{
+        width:60px !important;
+    }
+
+    .logo-kanan{
+        width:95px !important;
+    }
+
+}
