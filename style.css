@@ -6442,7 +6442,7 @@ JUDUL
 
 .header-flex{
     display:grid;
-    grid-template-columns:170px 1fr 170px;
+    grid-template-columns:170px 1fr 220px;
     align-items:center;
     gap:20px;
 }
@@ -6469,7 +6469,7 @@ JUDUL
     margin:0 auto 8px;
 }
 
-.logo-kanan{
+.header-flex .logo-kanan{
     width:210px !important;
     height:auto !important;
 }
